@@ -1,19 +1,10 @@
-# JavaScript - Fetching API - Genics-2023
+// RIGEL RAMADHANI WALONI
+// 5024221058
 
-## Fetching API with JavaScript
+// API LINK
+const apiData = "https://jsonplaceholder.typicode.com/todos/5";
 
----
-Nama    :   Rigel Ramadhani Waloni
-<br> NRP : 5024221058 
-
----
-### >> __API Link__
-### _https://jsonplaceholder.typicode.com/todos/5_
----
-
-### >> __Await/Async__
-
-```
+// >>>>> ASYNC/AWAIT <<<<<
 const fetchAPI_First = async (endpoint) => {
     try {
         const data = await fetch(endpoint);
@@ -28,12 +19,9 @@ const fetchAPI_First = async (endpoint) => {
 console.log("Starting Fetch Data...");
 fetchAPI_First(apiData);
 console.log("Still Fetching Data...");
-```
----
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-### >> __Promise__
-
-```
+// >>>>> PROMISE <<<<<
 const fetchAPI_Second = fetch(apiData);
 console.log(fetchAPI_Second);
 
@@ -45,4 +33,3 @@ fetch(apiData)
   .catch((error) => {
     console.log(error);
   });
-```
